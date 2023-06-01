@@ -8,6 +8,7 @@ function App() {
             <Routes>
                 {PublicRoutes.map((route, index) => {
                     let Layout = DefaultLayout;
+
                     if (route.layout) {
                         Layout = route.layout;
                     } else if (route.layout === null) {
